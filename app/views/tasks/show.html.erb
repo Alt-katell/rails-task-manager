@@ -1,0 +1,18 @@
+<div class="container">
+  <h1><%= @task.title %></h1>
+
+  <p><%= @task.details %></p>
+
+  <p id="completed">--<%= @completed %></p>
+
+
+
+  <br>
+
+  <button class="btn btn-primary"><%= link_to "Edit", edit_task_path, :style =>'color: white;' %></button>
+
+  <br>
+  <br>
+
+  <%= link_to "Back to list of tasks", tasks_path %>
+</div>

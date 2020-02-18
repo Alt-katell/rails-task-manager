@@ -1,24 +1,9 @@
 <div class="container">
   <h1>Edit a task</h1>
 
-  <%= form_for(@task) do |f| %>
-    <div class="form-group">
-      <%= f.label :title %>
-      <%= f.text_field :title, class: 'form-control' %>
-    </div>
+  <%= render "form" %>
 
-    <div class="form-group">
-      <%= f.label :details %>
-      <%= f.text_field :details, class: 'form-control' %>
-    </div>
-
-    <div class="form-check">
-      <%= f.label "Completed" %>
-      <%= f.check_box :completed %>
-    </div>
-
-    <%= f.submit class: 'btn btn-primary' %>
-  <% end %>
+  <br>
 
   <%= link_to "Back to the task", task_path %>
 </div>

@@ -7,6 +7,11 @@
   margin: 0 auto;
 }
 
+ul,
+.form-check {
+  padding-left: 0;
+}
+
 li {
   list-style: none;
 }
@@ -15,3 +20,12 @@ li {
   font-style: italic;
   color: #3C4146;
 }
+
+#details {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #3C4146;
+  border-radius: 4px;
+  padding: 16px;
+}
+
